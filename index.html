@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Age calculator</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+</head>
+<body>
+    <div class="container"> 
+        <h1>Age Calculator</h1>
+        <div class="gender-selection">
+            <input type="radio" id="male" name="gender" value="male">
+            <label for="male">Male</label>
+            <input type="radio" id="female" name="gender" value="female">
+            <label for="female">Female</label>
+        </div>
+        <div class="input-wrapper">
+            <input type="date" id="date-input">
+            <button id="calc-age-btn">Calculate</button>
+        </div>
+        <div class="output-wrapper">
+            <div class="image-wrapper">
+                <img id="male-0-15" src="1.png" alt="Male 0-15 years">
+                <img id="male-15-30" src="2.png" alt="Male 15-30 years">
+                <img id="male-30-50" src="3.png" alt="Male 30-50 years">
+                <img id="male-50-90" src="4.png" alt="Male 50-90 years">
+                <img id="female-0-15" src="1.png" alt="Female 0-15 years">
+                <img id="female-15-30" src="22.png" style="width: 210px; height: 210px;" alt="Female 15-30 years">
+                <img id="female-30-50" src="33.png" alt="Female 30-50 years">
+                <img id="female-50-90" src="11.png" alt="Female 50-90 years">
+            </div>
+            <div class="output-results">
+                <div>
+                    <span id="years">-</span>
+                    <p>Years</p>
+                </div>
+                <div>
+                    <span id="months">-</span>
+                    <p>Months</p>
+                </div>
+                <div>
+                    <span id="days">-</span>
+                    <p>Days</p>
+                </div>
+            </div>
+        </div>
+    </div>
+    <script src="script.js"></script>
+</body>
+</html>
